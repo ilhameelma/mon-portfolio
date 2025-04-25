@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Ilham E.</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    body {
+        
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h2 {
+      border-bottom: 2px solid #007bff;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    /* Styles généraux pour la carte de projet */
+.card {
+    border: 1px solid #ddd; /* Bordure légère */
+    border-radius: 10px; /* Coins arrondis */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animation douce */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Ombre plus marquée */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px; /* Coins arrondis pour l'image */
+    border-top-right-radius: 10px; /* Coins arrondis pour l'image */
+    object-fit: cover; /* Assure que l'image remplit bien l'espace sans déformation */
+    height: 200px; /* Fixe la hauteur de l'image */
+  }
+  
+  .card-body {
+    padding: 1.5rem; /* Plus d'espace autour du texte */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Taille du titre */
+    font-weight: bold; /* Titre en gras */
+    color: #333; /* Couleur du titre */
+    margin-bottom: 1rem; /* Espacement sous le titre */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Taille du texte */
+    color: #555; /* Couleur du texte */
+    margin-bottom: 1.5rem; /* Espacement sous le texte */
+  }
+  
+  .btn-outline-primary {
+    border: 2px solid #007bff; /* Bordure bleue */
+    color: #007bff; /* Texte bleu */
+    font-weight: bold; /* Texte en gras */
+    padding: 8px 20px; /* Espacement autour du texte */
+    transition: background-color 0.3s ease; /* Animation du fond */
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #007bff; /* Fond bleu au survol */
+    color: white; /* Texte en blanc au survol */
+  }
+  
+  </style>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Portfolio | Ilhame EL Mettichi</a>
+      
+      <!-- Bouton toggle pour mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Liens et champ de recherche -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+  
+        <!-- Champ de recherche -->
+        <form class="d-flex" role="search">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Recherche..." aria-label="Search">
+          <button class="btn btn-outline-primary btn-sm" type="submit">OK</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+  <!-- Accueil -->
+  <section id="home" class="text-center p-5 bg-light">
+    <div class="container">
+      <h1 class="display-4">Salut, moi c’est Ilhame</h1>
+      <p class="lead">Étudiante en Data Engineering & passionnée par le développement</p>
+      <a href="https://github.com/ilhameelma" class="btn btn-dark m-2" target="_blank">Voir mon GitHub</a>
+      <a href="CV-Ilhame EL Mettichi  Étudiant en ingénierie des données.pdf" class="btn btn-outline-primary m-2" download>Télécharger mon CV</a>
+    </div>
+  </section>
+  
+
+  <!-- À propos -->
+<section id="about" class="p-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Photo -->
+        <div class="col-md-4 text-center mb-4">
+          <img src="profil.jpg" class="rounded-circle shadow img-fluid" width="180" alt="Photo de Ilham">
+        </div>
+  
+        <!-- Texte + bouton -->
+        <div class="col-md-8">
+          <h2 class="mb-3">À propos de moi</h2>
+          <p>
+            Je suis étudiant en 1<sup>ère</sup> année de Data Engineering, passionné par la programmation et l'analyse de données.
+            J’ai déjà travaillé avec plusieurs langages comme <strong>Python</strong>, <strong>JavaScript</strong>, <strong>C</strong>, <strong>HTML/CSS</strong> et <strong>SQL</strong>.
+          </p>
+          <p>
+            J’ai réalisé des projets concrets comme :
+            <ul>
+              <li>Une application de <strong>gestion du personnel</strong> en C,</li>
+              <li>Un site <strong>touristique</strong> avec HTML, CSS et JavaScript,</li>
+              <li>Une <strong>extension Chrome</strong> pour bloquer les distractions,</li>
+              <li>Des projets en <strong>Python avec Tkinter et Pandas</strong>.</li>
+            </ul>
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Compétences -->
+  <section id="skills" class="bg-light p-5">
+    <div class="container">
+      <h2 class="mb-4">Compétences</h2>
+      <span class="badge bg-primary m-1">Python</span>
+      <span class="badge bg-success m-1">JavaScript</span>
+      <span class="badge bg-danger m-1">C</span>
+      <span class="badge bg-warning text-dark m-1">SQL</span>
+      <span class="badge bg-secondary m-1">HTML</span>
+      <span class="badge bg-secondary m-1">CSS</span>
+      <span class="badge bg-info text-dark m-1">Bootstrap</span>
+      <span class="badge bg-dark m-1">GitHub</span>
+      <span class="badge bg-secondary m-1">Travail en equipe</span>
+      <span class="badge bg-secondary m-1">Linux</span>
+      <span class="badge bg-warning text-dark m-1">Java</span>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="p-5">
+    <div class="container">
+      <h2>Projets</h2>
+      
+      <!-- Formulaire de recherche -->
+      <div class="row mb-4">
+        <div class="col-md-12">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Rechercher un projet..." aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Rechercher</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- CodSoft Project -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="codsoftproject.png" class="card-img-top" alt="Projet CodSoft">
+            <div class="card-body">
+              <h5 class="card-title">CodSoft Project</h5>
+              <p class="card-text">
+                Projet réalisé pendant mon stage à CodSoft. Ce projet a été codé en Python avec l'utilisation de Tkinter pour l'interface graphique.
+              </p>
+              <p><strong>Technologies :</strong> Python, Tkinter</p>
+              <p><strong>Objectif :</strong> Développer une application pour résoudre les problématiques de gestion des données.</p>
+              <a href="https://github.com/ilhameelma/CODESOFT" class="btn btn-primary" target="_blank">Code GitHub</a>
+              <a href="lien-vers-demo-en-ligne" class="btn btn-success" target="_blank">Voir la démo</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- CS50 Project -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="blocage.png" class="card-img-top" alt="CS50 Project">
+            <div class="card-body">
+              <h5 class="card-title">CS50 Project</h5>
+              <p class="card-text">
+                Projet final du cours CS50. J'ai développé une extension Chrome pour bloquer les distractions.
+              </p>
+              <p><strong>Technologies :</strong> HTML, CSS, JavaScript</p>
+              <p><strong>Objectif :</strong> Aider les utilisateurs à rester concentrés pendant les périodes de travail.</p>
+              <a href="https://github.com/code50/184605054" class="btn btn-primary" target="_blank">Code GitHub</a>
+              <a href="lien-vers-demo-en-ligne" class="btn btn-success" target="_blank">Voir la démo</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Mini projet gestion des maladies -->
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="gestiondemaladie.png" class="card-img-top" alt="Mini projet Gestion des Maladies">
+            <div class="card-body">
+              <h5 class="card-title">Mini projet Gestion des Maladies</h5>
+              <p class="card-text">
+                Projet d'analyse des données médicales avec Python, Pandas, NumPy et Matplotlib.
+              </p>
+              <p><strong>Technologies :</strong> Python, Pandas, Matplotlib, HTML, CSS, JavaScript</p>
+              <p><strong>Challenges :</strong> Intégration d'un chat interactif pour une interface utilisateur dynamique.</p>
+              <a href="https://github.com/ilhameelma/Pythone-Project" class="btn btn-primary" target="_blank">Code GitHub</a>
+              <a href="lien-vers-demo-en-ligne" class="btn btn-success" target="_blank">Voir la démo</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Projets supplémentaires (initialement masqués) -->
+        <div id="extraProjects" class="d-none">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="planifacationExemen.jpg" class="card-img-top" alt="Conception et Développement d'une application de planification des examens avec Java">
+              <div class="card-body">
+                <h5 class="card-title">Conception et Développement d’une Application de Planification des Examens avec Java</h5>
+                <p class="card-text">
+                  Ce projet a été réalisé durant ma formation. Il permet de planifier des examens, gérer des horaires et des salles en utilisant <strong>Java</strong>.
+                </p>
+                <p><strong>Fonctionnalités :</strong> Gestion des horaires, réservation des salles, planification des examens, génération de rapports.</p>
+                <p><strong>Challenges rencontrés :</strong> Gérer les conflits d'horaires et optimiser l'interface utilisateur pour une meilleure expérience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Bouton Voir plus -->
+        <div class="col-md-12 text-center">
+          <button class="btn btn-outline-primary" id="showMoreBtn">Voir plus de projets</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    document.getElementById('showMoreBtn').addEventListener('click', function() {
+      const extraProjects = document.getElementById('extraProjects');
+      extraProjects.classList.toggle('d-none');
+      const button = document.getElementById('showMoreBtn');
+      button.textContent = extraProjects.classList.contains('d-none') ? 'Voir plus de projets' : 'Voir moins';
+    });
+  </script>
+  
+  
+  <section id="certificates" class="bg-light p-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Mes Certifications</h2>
+      <div class="row">
+        <!-- Certificat 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="cs50certifacation.png" class="card-img-top" alt="Certificat Harvard avec edX">
+              <div class="card-body">
+                <h5 class="card-title">Certificat Harvard avec edX(2025)</h5>
+                <p class="card-text">
+                  Certificat obtenu en 2025 après avoir complété le cours en informatique et résolu les problèmes de set. Le projet final a été validé, marquant la réussite du programme proposé par Harvard via la plateforme edX.
+                </p>
+                <a href="https://certificates.cs50.io/d8c6d2c7-6167-43ba-bc2d-3405943bdc09.pdf?size=letter" class="btn btn-primary" target="_blank">Voir le certificat</a>
+              </div>
+            </div>
+          </div>
+          
+        <!-- Certificat 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="codsoftcertification.png" class="card-img-top" alt="Certificat en Python">
+              <div class="card-body">
+                <h5 class="card-title">Certificat en Python (2025)</h5>
+                <p class="card-text">
+                  Certificat délivré après la réussite du stage chez CodSoft, où j'ai complété une formation intensive sur la programmation en Python. Ce certificat valide mes compétences dans l'utilisation de Python pour le développement de solutions logicielles et l'analyse de données.
+                </p>
+                <a href="https://drive.google.com/file/d/1cXSCGLKCSWH4sxM4Ldeg9fyAIVr5ZaEM/view" class="btn btn-primary" target="_blank">Voir le code</a>
+              </div>
+            </div>
+          </div>
+          
+        <!-- Certificat 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="01certifacation.png" class="card-img-top" alt="Certification Professionnelle en Développement">
+              <div class="card-body">
+                <h5 class="card-title">Certification Professionnelle en Développement (2024)</h5>
+                <p class="card-text">
+                  Certificat de maîtrise en Développement, obtenu grâce au programme de 01 club sur les langages HTML, CSS et JavaScript. Cette certification valide mes compétences en création de sites web modernes et réactifs.
+                </p>
+                <a href="https://www.linkedin.com/posts/ilhame-el-mettichi-1089a1296_01club-activity-7176586325825875968-yczX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEexfVgBiLUy7qMt0f0RG_25PMcRaByVfO0" class="btn btn-primary" target="_blank">Voir le certificat</a>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="bitdegreecertifacation.jpeg" class="card-img-top" alt="Certification PHP et MySQL">
+              <div class="card-body">
+                <h5 class="card-title">Certification PHP et MySQL (2024)</h5>
+                <p class="card-text">
+                  Certificat de maîtrise des langages PHP et MySQL, obtenu grâce au programme de BitDegree. Cette certification valide mes compétences dans le développement d'applications web dynamiques et la gestion des bases de données relationnelles.
+                </p>
+                <a href="https://www.linkedin.com/learning/certification" class="btn btn-primary" target="_blank">Voir le certificat</a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="freecampcertification.png" class="card-img-top" alt="Certification JavaScript freeCodeCamp">
+              <div class="card-body">
+                <h5 class="card-title">Certification JavaScript : Algorithmes et Structures de Données</h5>
+                <p class="card-text">
+                  Obtenue via <strong>freeCodeCamp</strong>, cette certification valide ma compréhension des algorithmes, des structures de données et des concepts fondamentaux en JavaScript.
+                </p>
+                <a href="https://freecodecamp.org/certification/fcc9cd96eee-959c-4b17-80ed-263f9c75cb1b/javascript-algorithms-and-data-structures" class="btn btn-primary" target="_blank">Voir le certificat</a>
+              </div>
+            </div>
+          </div>
+          
+          
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light p-5">
+    <div class="container text-center">
+      <h2>Me contacter</h2>
+      <p>Email : <a href="mailto:ilhamelmattichi12@email.com">ilhamelmattichi12@email.com</a></p>
+      <a href="https://github.com/ilhameelma" target="_blank" class="me-3">
+        <img src="github1.png" width="30" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/tonprofil" target="_blank">
+        <img src="linkdinicon.jpg" width="30" alt="LinkedIn">
+      </a>
+    </div>
+  </section>
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
